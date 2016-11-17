@@ -22,7 +22,8 @@ You can do that with the following command
 
 - `fly --target conc-test login  --concourse-url http://138.68.100.7:8080`
 
-where
+Let's break down this command.
+
 - fly : the exe file you downloaded
 - --target : setting an alias for the server, conc-test in this case
 - login : will ask for login credentials as a user input after you ran the command (the same that is given in the download section)
@@ -32,12 +33,48 @@ where
 
 In the local clone of your git repo containing your work, create a pipeline folder where you will place your pipeline description file (hello-simcorp.yml). We have done this for you in the https://github.com/SimCorpTrial/concourse-test-target.git repo.
 
+(
+  _If you are following along with this description, make a copy of the hello-simcorp.yml and put your initials in the name of the file so we can all work on different files. Please remember to change not just the name of the file, but inside the file the name of the job. You can also change the name of the task, that is optional._
+
+![job-config](images/job-config.png)
+
+)
+
+
+
+
 - cd into the folder your config file is
 - run the following command to put/update your pipeline on the server
 
   - `fly -t conc-test set-pipeline -p hello-simcorp -c hello-simcorp.yml`
 
+(also remember to change the name of the pipeline and the name of the file in the command above if you are following along)
+
 ### Unpause the pipeline
 
 When a pipeline is initally created, it is paused. To unpause the pipeline, run
   - `fly -t conc-test unpause-pipeline -p hello-simcorp`
+
+## Checkout your pipeline
+
+To see the effect of your making on the server, go on http://138.68.100.7:8080/. Log in (right up corner) with the same credentials before. You will see something like this. Click the burger menu on the top left to see the pipelines created on our server.
+
+![after-login](images/after-login.png)
+
+You will see something like this.
+
+![pipelines](images/pipelines.png)
+
+On click on hello-simcorp you will see the pipeline created under that name. It has only one element, as it is running only one task.
+
+![pipelines](images/hello-simcorp.png)
+
+When you click the green rectangle, you will see this.
+
+![pipelines](images/somcorp-build.png)
+
+The numbers show the builds. When you click them, you get the output of the build under. This very simple pipeline has only one task that is called say-hello. You can click that in the UI and it will show you the output of that single task.
+
+
+## Next steps 
+Alright! Now you can see the basic setup of Concourse. Please proceed to the exercises folder to get some more taste of the Concourse magic.

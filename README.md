@@ -88,7 +88,10 @@ The rest of the time you can use to get your feet wet with Concourse. What you d
 - You can skip spinning up Concourse in vagrant. Use the one we prepared for you on http://138.68.100.7:8080/
 - Create and run the pipelines with your initials in it. As everyone is using the same Concourse going through the same repo, if you use the same names, you will keep overwriting the same pipelines.
 
+You can find a video walkthrough from the creators of the tutorial here https://www.youtube.com/watch?v=m_KpkupKITc .
+
 Happy hacking!
+
 
 You can find the slides of Lars here
 

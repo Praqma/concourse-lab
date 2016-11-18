@@ -92,5 +92,6 @@ Happy hacking!
 
 You can find the slides of Lars here
 http://code.praqma.com/reveals/the-future-pipeline/#/
+
 You can find the slides of Jan here
 https://docs.google.com/presentation/d/1X2k83JdH4ck59cnqU5hALuUflQJxwgpzcB6jvpg9Qyg/edit?usp=sharing

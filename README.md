@@ -76,5 +76,16 @@ When you click the green rectangle, you will see this.
 The numbers show the builds. When you click them, you get the output of the build under. This very simple pipeline has only one task that is called say-hello. You can click that in the UI and it will show you the output of that single task.
 
 
-## Next steps 
-Alright! Now you can see the basic setup of Concourse. Please proceed to the exercises folder to get some more taste of the Concourse magic.
+## Workshop time!
+
+Alright! Now you can see the basic setup of Concourse.
+
+Here comes the workshop. There is a really good set of exercises you can take a look at here: https://github.com/starkandwayne/concourse-tutorial
+
+The rest of the time you can use to get your feet wet with Concourse. What you do is the following:
+
+- Clone the repo above
+- You can skip spinning up Concourse in vagrant. Use the one we prepared for you on http://138.68.100.7:8080/
+- Create and run the pipelines with your initials in it. As everyone is using the same Concourse going through the same repo, if you use the same names, you will keep overwriting the same pipelines.
+
+Go ahead and enjoy.

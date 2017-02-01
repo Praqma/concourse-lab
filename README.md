@@ -1,5 +1,5 @@
 ---
-Maintainer: Timea
+maintainer: Timea
 ---
 
 # Running a pipeline in Concourse
